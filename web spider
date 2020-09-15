@@ -1,5 +1,5 @@
-from selenium import webdriver
 
+from selenium import webdriver
 
 def login(email, password):
     browser = webdriver.Chrome()
