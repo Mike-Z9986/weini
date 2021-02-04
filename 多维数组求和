@@ -1,0 +1,11 @@
+def nested_sum(t):
+    global total
+    for nest in t:
+        if type(nest) == int:
+            total += nest
+        else:
+            nested_sum(nest)
+
+total = 0
+nested_sum(t)
+print(total)
